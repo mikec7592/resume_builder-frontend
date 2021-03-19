@@ -226,6 +226,7 @@ class App extends Component {
     if (this.state.user) {
         masterResume = < MasterResume
           name={`${this.state.user.firstName} ${this.state.user.lastName}`}
+          address={`${this.state.user.address}, ${this.state.user.city} ${this.state.user.state}`}
           masterResume={this.state.user.masterResume}
           handleChangeForm={this.handleChangeForm}
           handleExperianceDelete={this.handleExperianceDelete}

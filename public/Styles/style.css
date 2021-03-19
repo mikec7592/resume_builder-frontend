@@ -234,9 +234,11 @@ legend {
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 2;
 }
+
 .resume-item:hover .overlay {
   display: block;
 }
+
 .actions {
   float: right;
 }
@@ -255,4 +257,10 @@ legend {
 .ascii {
   font-size: 4em;
   margin-top: 50px;
+}
+
+.master-address {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: -25px;
 }

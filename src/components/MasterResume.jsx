@@ -14,22 +14,22 @@ class MasterResume extends Component{
             masterResume =  <div>
                 <h2 className="master-name">{this.props?.name || ''}</h2>
                 
-                
                 <div className="resume-item master-tag">
                     <h3 className="resume-item master-tag">
                         {this.props.masterResume.title ?
                         this.props.masterResume.title
                             : 'Add a title'}
                     </h3>
-                            <div className="overlay">
-                                <span className="actions">
-                                <button onClick={() => { this.props.handleChangeForm('title') }}>edit</button>
-                            </span>
-                        </div>
-                    
+                    <div className="overlay">
+                        <span className="actions">
+                            <button onClick={() => { this.props.handleChangeForm('title') }}>edit</button>
+                        </span>
+                    </div>
                </div>
                 
-                
+                <div className="master-address">
+                    <p>{ this.props?.address }</p>
+                </div>
                 <div className="resume-item master-summary">
                     {this.props.masterResume.summery ? this.props.masterResume.summery : 'add a Summery'}
                     <div className="overlay">
