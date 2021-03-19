@@ -175,16 +175,17 @@ class App extends Component {
       updatedUser.masterResume.experience.push(newExperience);
       this.setState({
       user: updatedUser
-    });
+      });
+    this.handleChangeForm('')
     this.updateDatabase()
   }
   
   handleExperienceEdit = (job) => {
-    console.log(job)
+    this.handleChangeForm('experiance')
     this.setState({
         job: job
     });
-    this.handleChangeForm('experiance')
+    
 
     // this.experienceForm.current.handleEdit(job)
   }
@@ -200,7 +201,8 @@ class App extends Component {
 
       this.setState({
       user: updatedUser
-    });
+      });
+    this.handleChangeForm('')
     this.updateDatabase()
   }
 

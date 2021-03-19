@@ -72,7 +72,7 @@ class ExperianceForm extends Component{
                         </div>
                         
                         <label htmlFor="listPoints">Details</label>
-                        <input type="text" className="u-full-width" onChange={this.handleChange} id="listPoints" value={this.state.listPoints} />
+                        <textarea className="u-full-width" onChange={this.handleChange} id="listPoints" value={this.state.listPoints}></textarea>
                     </fieldset>
 
                     <input className="u-full-width button-primary" type="submit" value="Submit" />
