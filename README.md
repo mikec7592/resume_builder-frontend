@@ -7,7 +7,8 @@
 </ul>
 
 ### Functions
-<ul>Users have a multitude of options on this app including
+<ul>
+<li>Users have a multitude of options on this app including</li>
 <li>Login functionality</li>
 <li>Sign up functionality</li>
 <li>Building a master resume from scratch</li>
