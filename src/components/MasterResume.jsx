@@ -16,7 +16,7 @@ class MasterResume extends Component{
                 
                 
                 <div className="resume-item master-tag">
-                {this.props.masterResume ?
+                {this.props.masterResume.title ?
                     <h3 className="resume-item master-tag">
                         {this.props.masterResume.title}
                             <div className="overlay">
