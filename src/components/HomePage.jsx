@@ -10,9 +10,10 @@ class HomePage extends Component{
 
     render() {
         return (
-            <div>
+            <div className='homepage'>
                 <h2>Resume Builder</h2>
-                <h3>An app that Builds Resumes</h3>
+                <h3>An app that builds Resumes</h3>
+                <div className="ascii">¯\_(ツ)_/¯</div>
               </div>
         ); 
     }
