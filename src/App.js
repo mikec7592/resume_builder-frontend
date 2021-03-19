@@ -16,6 +16,7 @@ import SummeryForm from './components/forms/SummeryForm';
 import SkillsForm from './components/forms/SkillsForm';
 import ExperianceForm from './components/forms/ExperianceForm';
 
+import './App.css'
 
 let baseURL = '';
 if (process.env.NODE_ENV === 'development') {
