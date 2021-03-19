@@ -16,16 +16,17 @@ class MasterResume extends Component{
                 
                 
                 <div className="resume-item master-tag">
-                {this.props.masterResume.title ?
                     <h3 className="resume-item master-tag">
-                        {this.props.masterResume.title}
+                        {this.props.masterResume.title ?
+                        this.props.masterResume.title
+                            : 'Add a title'}
+                    </h3>
                             <div className="overlay">
                                 <span className="actions">
                                 <button onClick={() => { this.props.handleChangeForm('title') }}>edit</button>
                             </span>
                         </div>
-                    </h3>
-                : 'Add a title'}
+                    
                </div>
                 
                 
