@@ -140,7 +140,7 @@ class App extends Component {
     }
   }
 
-  handleChangeForm = (form) => {
+  handleChangeForm = async (form) => {
     this.setState({ currentForm: form });
   }
 
@@ -181,13 +181,13 @@ class App extends Component {
     this.updateDatabase()
   }
   
-  handleExperienceEdit = (job) => {
-    this.handleChangeForm('experiance')
-    this.setState({
-        job: job
+  handleExperienceEdit = async (job) => {
+    this.handleChangeForm('')
+    await this.setState({
+      job: job
     });
+    this.handleChangeForm('experiance')
     
-
     // this.experienceForm.current.handleEdit(job)
   }
 
