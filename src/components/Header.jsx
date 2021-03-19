@@ -25,11 +25,9 @@ class Header extends Component{
                     <div>
                         <a className="logo" href='/'><h1>Resume Builder</h1></a>
                         
-                        
-                        {this.props.user !== null && this.props.user ?
+                        {this.props.token !== null && this.props.token ?
                             <React.Fragment>
-
-                            <ul>
+                            {/* <ul>
                             <li>
                                 <button to="/" className="button master-dropdown-button" onClick={this.handleDropdown}>Master Resume </button>
                                 {this.state.masterDropdown ?
@@ -37,11 +35,13 @@ class Header extends Component{
                                         <ul className="dropdown">
                                             <li><button onClick={() => { this.props.handleChangeForm('summery') } }>Summery</button></li>
                                             <li><button onClick={() => { this.props.handleChangeForm('title') }}>Title</button></li>
+                                            <li><button onClick={() => { this.props.handleChangeForm('skills') }}>Skills</button></li>
+                                            <li><button onClick={() => { this.props.handleChangeForm('experiance') }}>Experiance</button></li>
                                         </ul>
                                     </div>
-                                    : ''}  
+                                    : ''}
                             </li>
-                        </ul>
+                        </ul> */}
 
                         <div className="signin-buttons">
                             <button onClick={ this.props.clearToken } className="button"> Log out </button>

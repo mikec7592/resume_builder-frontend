@@ -9,28 +9,22 @@ class MasterResume extends Component{
     }
     
     render() {
-        let masterResume;
-        if (this.props.masterResume) {
-            masterResume =  <div>
+        return (
+            <div>
                 <h2 className="master-name">{this.props?.name || ''}</h2>
-                
-                
-                <div className="resume-item master-tag">
-                {this.props.masterResume.title ?
+                {this.props.masterResume ?
                     <h3 className="resume-item master-tag">
                         {this.props.masterResume.title}
-                            <div className="overlay">
-                                <span className="actions">
-                                <button onClick={() => { this.props.handleChangeForm('title') }}>edit</button>
-                            </span>
-                        </div>
+                         <div className="overlay">
+                        <span className="actions">
+                            <button onClick={() => { this.props.handleChangeForm('title') }}>edit</button>
+                        </span>
+                    </div>
                     </h3>
-                : 'Add a title'}
-               </div>
-                
-                
+                : ''}
+               
                 <div className="resume-item master-summary">
-                    {this.props.masterResume.summery ? this.props.masterResume.summery : 'add a Summery'}
+                    {this.props.masterResume !== "" ? this.props.masterResume.summery : 'Click to Add A Title'}
                     <div className="overlay">
                         <span className="actions">
                             <button onClick={() => { this.props.handleChangeForm('summery') }}>Edit</button> 
@@ -40,7 +34,7 @@ class MasterResume extends Component{
 
                 <div className="resume-item master-skills">
                     <div className="master-skills-title"><strong>Skills:</strong></div>
-                    <div className="master-skills-items">{this.props.masterResume ? this.props.masterResume.skills : 'Add Skills'}</div>
+                    <div className="master-skills-items">{this.props.masterResume ? this.props.masterResume.skills : ''}</div>
                     <div className="overlay">
                         <span className="actions">
                             <button onClick={() => { this.props.handleChangeForm('skills') }}>Edit</button>
@@ -48,8 +42,6 @@ class MasterResume extends Component{
                     </div>
                 </div>
                 
-
-
                 {this.props.masterResume.experience.length > 0 ?
                     <ul>
                         {this.props.masterResume.experience.map(job => {
@@ -74,7 +66,7 @@ class MasterResume extends Component{
                     </ul>
                     : 
                     <div className="resume-item master-experience">
-                        <div>Add experience items</div>
+                        <div>Click Add to add an item</div>
                             <div className="overlay">
                                 <span className="actions">
                                     <button onClick={() => { this.props.handleChangeForm('experiance') }}>Add</button>
@@ -83,15 +75,7 @@ class MasterResume extends Component{
                         </div> 
                     }
             </div>
-        
-        } else {
-            masterResume = <div></div>
-        }
-        
-        return (
-            <div>
-                {masterResume}
-            </div>
+
         );
         
     }

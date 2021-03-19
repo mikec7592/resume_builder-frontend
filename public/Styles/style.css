@@ -5,6 +5,10 @@
      height: 100vh;
      width: 100vw;
  }
+
+ ul{
+     list-style: none;
+ }
 #root, .container{
     height: 90%;
 }
@@ -188,4 +192,67 @@ fieldset{
 legend{
     font-size: 1.2em;
     text-decoration: underline;
+}
+
+.master-experience{
+    position: relative;
+    /* list-style: none; */
+}
+
+
+
+.master-experience-detail{
+    
+    font-weight: bolder;
+
+}
+
+master-skills{
+    margin: 15px 0;
+}
+
+.master-skills-title,
+.master-skills-items {
+    display: inline;
+}
+
+.resume-item{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.8); 
+    z-index: 2; 
+    
+}
+.resume-item:hover .overlay{
+    display: block;
+}
+.actions{
+    float: right;
+}
+
+.actions button{
+    border: none;
+    padding: 0 5px;
+    margin: 0 5px;
+    
+}
+
+.homepage{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ascii{
+    font-size: 4em;
+    margin-top: 50px;
 }
