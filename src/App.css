@@ -247,6 +247,12 @@ master-skills {
   margin: 0 5px;
 }
 
+.master-address {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: -25px;
+}
+
 .homepage {
   margin-top: 50px;
   text-align: center;
