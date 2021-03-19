@@ -20,7 +20,6 @@
 <li>React</li>
 <li>Javascript</li>
 <li>Skeleton CSS</li>
-<li>Normalise CSS</li>
 <li>React Router</li>
 <li>Sessions</li>
 </ul>
